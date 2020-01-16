@@ -11,7 +11,7 @@ L'idée finale est de commander un "Space Invaders" avec notre manette USB, cepe
 
 ## Pour commencer
 
-Tout d'abord, il est nécessaire de télécharger le fichier compressé `projet_Fauchois-Rouille.targz` fourni dans le mail et l'extraire dans un dossier dédié.
+Vous trouverez tous les fichiers et dossiers liés à ce projet sur ce dépôt git.
 
 ### Pré-requis
 
