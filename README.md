@@ -46,9 +46,10 @@ _Etape 3_ : Pour vérifier la bonne lecture des boutons, joysticks et leds, il e
 
 _Etape 1_ : se placer dans le répertoire ATMega16u2/PolytechLille/PAD/<br/>
 _Etape 2_ : exécutez la commande ``make``<br/>
-_Etape 3_ : passer l'Arduino en mode `dfu` en court-circuitant les lignes reset et masse présentes sur l'ICSP. Exécutez ensuite la commande ``lsusb | grep DFU`` pour vérifier que l'ATMega16u2 est bien en mode `dfu`<br/>
-_Etape 4_ : entrez successivement les commandes ``dfu-programmer atmega16u2 erase``, ``dfu-programmer atmega16u2 flash PAD.hex`` & ``dfu-programmer atmega16u2 reset``<br/>
-_Etape 5_ : débranchez puis rebranchez la carte. Exécutez la commande ``lsusb | grep 1234:4321``, si une ligne apparaît à l'exécution de cette commande vous pouvez passer à la suite<br/>
+_Etape 3_ : exécutez la commande ``sudo apt-get install dfu-programmer`` pour installer l'utilitaire DFU.<br/>
+_Etape 4_ : passer l'Arduino en mode `dfu` en court-circuitant les lignes reset et masse présentes sur l'ICSP. Exécutez ensuite la commande ``lsusb | grep DFU`` pour vérifier que l'ATMega16u2 est bien en mode `dfu`<br/>
+_Etape 5_ : entrez successivement les commandes ``dfu-programmer atmega16u2 erase``, ``dfu-programmer atmega16u2 flash PAD.hex`` & ``dfu-programmer atmega16u2 reset``<br/>
+_Etape 6_ : débranchez puis rebranchez la carte. Exécutez la commande ``lsusb | grep 1234:4321``, si une ligne apparaît à l'exécution de cette commande vous pouvez passer à la suite<br/>
 
 - _Vérification_ : entrez la commande ``lsusb -vvv -d 1234:4321``, elle permet d'afficher les informations concernant le périphérique et nous donne une description de ses interfaces USB. On peut y retrouver les interfaces créées dans les fichiers `PAD` et `Descriptor`, c'est-à-dire une interface IN avec deux endpoints et une interface OUT avec un endpoints, tous de type interruption. On obtient également `idVendor`, `idProduct`, les `bEndpointAdress`, etc.
 
