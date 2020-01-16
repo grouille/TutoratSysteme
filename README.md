@@ -11,7 +11,7 @@ L'idée finale est de commander un "Space Invaders" avec notre manette USB, cepe
 
 ## Pour commencer
 
-Vous trouverez tous les fichiers et dossiers liés à ce projet sur ce dépôt git.
+Vous trouverez tous les fichiers et dossiers liés à ce projet sur ce dépôt git. Téléchargez l'ensemble du répertoire ``lukas-fauchois/TutoratSysteme`` pour passer à la suite.
 
 ### Pré-requis
 
@@ -38,8 +38,9 @@ Pour pouvoir installer notre programme, il est important de suivre rigoureusemen
 _Etape 1_ : se placer dans le répertoire ATMega328p/<br/>
 _Etape 2_ : exécutez la commande ``make upload``<br/>
 _Etape 3_ : Pour vérifier la bonne lecture des boutons, joysticks et leds, il est nécessaire d'utiliser la liaison série. Sur la machine, ouvrir un nouveau terminal et entrer la commande ``minicom -8 -o -b 9600 -D /dev/ttyACM0``<br/>
-_Test des leds_ : Pour allumer les leds, utiliser les touches A à F du clavier (qui correspondent chacune à une led). Les entrées en minuscules éteignent les leds correspondantes et inversement en MAJUSCULES.<br/>
-_Test des boutons/joysticks_ : En appuyant sur les boutons ou en modifiant la position du joystick, on reçoit des valeurs par liaison série affichées sur le minicom.
+
+- _Test des leds_ : Pour allumer les leds, utiliser les touches A à F du clavier (qui correspondent chacune à une led). Les entrées en minuscules éteignent les leds correspondantes et inversement en MAJUSCULES.<br/>
+- _Test des boutons/joysticks_ : En appuyant sur les boutons ou en modifiant la position du joystick, on reçoit des valeurs par liaison série affichées sur le minicom.
 
 #### Programmer l'ATMega16u2
 
